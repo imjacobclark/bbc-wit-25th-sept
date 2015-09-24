@@ -1,0 +1,75 @@
+<style>
+    .hero-image__wrapper {
+        width: 900px;
+        height: 300px;
+        margin: 0 auto;
+        background: url('http://ichef.bbci.co.uk/images/ic/1600xn/p032myjr.jpg');
+        border: 1px solid black;
+    }
+
+    .hero-image__title-wrapper {
+        padding-top: 10%
+    }
+
+    .hero-image__title {
+        margin: 0 auto;
+        padding-top: 40px;
+        background: rgba(0,83,97,0.9);
+        width: 600px;
+        height: 50px;
+        font-family: Arial;
+        text-align: center;
+    }
+
+    .hero-image__title-link {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    .hero-image__title-link:hover {
+        color: #FFFFFF;
+        text-decoration: underline;
+    }
+
+    @media screen and (max-width: 900px) {
+        .hero-image__wrapper {
+            width: 700px;
+        }
+
+        .hero-image__title-wrapper {
+            padding-top: 15%
+        }
+
+        .hero-image__title {
+            width: 300px;
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+        .hero-image__wrapper {
+            width: 300px;
+        }
+
+        .hero-image__title-wrapper {
+            padding-top: 40%
+        }
+
+        .hero-image__title {
+            width: 200px;
+        }
+    }
+</style>
+
+<h1>Hero Image Component Demo</h1>
+
+<hr />
+
+<div class="hero-image__wrapper">
+    <div class="hero-image__title-wrapper">
+        <div class="hero-image__title">
+            <a class="hero-image__title-link" href="http://www.bbc.co.uk/guides/z3sg9qt">
+                Do algorithms rule my life?
+            </a>
+        </div>
+    </div>
+</div>
